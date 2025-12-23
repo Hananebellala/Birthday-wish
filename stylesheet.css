@@ -1299,3 +1299,17 @@ audio {
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     background: linear-gradient(135deg, #FFD93D, #FF6B6B);
 }
+
+
+@media (max-width: 768px) {
+    .balloon h2 {
+        font-size: 36px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .balloon h2 {
+        font-size: 24px;
+    }
+}
