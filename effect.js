@@ -3,6 +3,7 @@ $(window).load(function(){
 	$('.container').fadeIn('fast');
 });
 $('document').ready(function(){
+	
 		var vw;
 		$(window).resize(function(){
 			 vw = $(window).width()/2;
@@ -175,7 +176,7 @@ $('document').ready(function(){
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(4000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
@@ -193,6 +194,7 @@ $('document').ready(function(){
 		msgLoop(0);
 		
 	});
+	
 });
 
 
